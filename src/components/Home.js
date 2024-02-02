@@ -5,6 +5,7 @@ import React, { useEffect, useRef} from 'react'
 import About from './About';
 import Contact from './Contact';
 import Project from './Project';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 const Home = () => {
@@ -42,9 +43,12 @@ const Home = () => {
 
             React, and SEO, <br/>I bring a unique blend of technical skills and strategic thinking to every project.</p>
            <br />
-           <a href="/contact" className='bg-orange-600 text-white text-xl 
+           <a href="/contact" className='bg-orange-600 text-white text-lg rounded-xl 
             hover:bg-white hover:text-red-500 transition hover:translate-y-3 duration-300
-             border-0 shadow-lg p-3 mt-5' id='contact'>Contact me</a>
+             border-0 shadow-lg p-3 mt-5 mr-3' id='contact'>Hire Me</a>
+             <a href="resume.pdf" download={"resume.pdf"} className='bg-gray-300 text-black text-lg rounded-xl  
+            hover:bg-white hover:text-red-500 transition hover:translate-y-3 duration-300
+             border-0 shadow-lg p-3 mt-5' id='contact'><FileDownloadIcon/>Download CV</a>
 
            <Icons/>
       </div>

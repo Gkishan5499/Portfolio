@@ -9,19 +9,19 @@ const About = () => {
     {
        icon:<IntegrationInstructionsIcon/> ,
        service:"Web Development",
-       description:"Creating a compelling web development portfolio is essential to showcase your skills and attract potential clients or employers.",
+       description:"I craft seamless and engaging online experiences. Proficient in HTML, CSS, React, WordPress,PHP and NodeJS, I specialize in creating responsive and dynamic websites. ",
        button:"Read More",
     },
     {
         icon:<ImportantDevicesIcon/>  ,
         service:"Frontend Developer",
-        description:"Creating a compelling web development portfolio is essential to showcase your skills and attract potential clients or employers.",
+        description:"Proficient in HTML, CSS, and JavaScript, I thrive on turning design concepts into responsive and interactive websites. Skilled in using modern frameworks like React to build dynamic interfaces that engage users seamlessly.",
         button:"Read More",
      },
      {
         icon:<CloudIcon/>  ,
         service:"Wordpress Development",
-        description:"Creating a compelling web development portfolio is essential to showcase your skills and attract potential clients or employers.",
+        description:"Passionate WordPress developer with a flair for crafting dynamic and visually stunning websites. Proficient in leveraging the power of WordPress to create seamless user experiences and responsive designs. ",
         button:"Read More",
      }
   ]
@@ -52,7 +52,7 @@ const About = () => {
        myservice.map((e,i)=>{
        return (
            <div key={i} className='md:w-1/3 bg-gray-500 border hover:bg-gray-800  border-gray-600 text-gray-50 p-4 shadow-xl
-            h-72 md:h-60 md:m-2 mt-2 w-full transition hover:translate-y-2 duration-500 '>
+            h-72 md:h-72 md:m-2 mt-2 w-full transition hover:translate-y-2 duration-500 '>
              <h2>{e.icon}</h2>
              <h1 className='text-2xl font-semibold mt-2'>{e.service}</h1>
              <h3>{e.description}</h3><br/>
