@@ -53,9 +53,9 @@ const Home = () => {
            <Icons/>
       </div>
 
-      <div className=' '>
-         <div className='w-fit rounded-full bg-orange-600 shadow-2xl shadow-orange-300'> 
-         <img className='object-cover rounded-full border-0 shadow-2xl' src={kisha} alt="kg" /></div>
+      <div className='m-2 '>
+         <div className='md:w-fit  rounded-full bg-orange-600 shadow-2xl shadow-orange-300'> 
+         <img className='object-cover rounded-full border-0 shadow-2xl  ' src={kisha} alt="kg" /></div>
            
        
       </div>

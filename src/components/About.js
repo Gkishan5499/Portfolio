@@ -52,7 +52,7 @@ const About = () => {
        myservice.map((e,i)=>{
        return (
            <div key={i} className='md:w-1/3 bg-gray-500 border hover:bg-gray-800  border-gray-600 text-gray-50 p-4 shadow-xl
-            h-72 md:h-72 md:m-2 mt-2 w-full transition hover:translate-y-2 duration-500 '>
+            h-80 md:h-72 md:m-2 pb-2 mt-2 w-full transition hover:translate-y-2 duration-500 '>
              <h2>{e.icon}</h2>
              <h1 className='text-2xl font-semibold mt-2'>{e.service}</h1>
              <h3>{e.description}</h3><br/>
