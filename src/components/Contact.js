@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Icons from './Icons';
 import swal from 'sweetalert'
+import emailjs from '@emailjs/browser';
 
 
 
@@ -14,35 +15,54 @@ const Contact = () => {
    
    const adduser= async(e)=>{
     try{
-     
+    
       e.preventDefault();
+      const serviceId= "service_jzrwcxq";
+      const templateId= "template_q7qarex";
+      const publickey="ZPkR47gBF-bFMnrBX";
+
       const{name,email,message}=user;
-   const res= await fetch("https://portfolio-49846-default-rtdb.firebaseio.com/contact.json",
-   {
-    method:'POST',
-     headers:{
-      'Content-Type':'application/json'
-     },
-     body:JSON.stringify({
-      name,
-      email,
-      message,
-     })
-   })
-      swal({
+      const templateParams={
+        from_name:name,
+        from_email:email,
+        to_name:'Kishan Kumar',
+        message:message,
+
+      }
+
+    emailjs.send(serviceId,templateId,templateParams,publickey)
+     .then((response)=>{
+      console.log("email sent successfully",response);
+       swal({
         title:"successfull message sent",
         icon:'success',
         buttons:false,
         timer:3000
 
        });
-   
-    setUser({
+
+       setUser({
         name:"",
         email:"",
         message:""
        })
 
+     })
+  //  const res= await fetch("https://portfolio-49846-default-rtdb.firebaseio.com/contact.json",
+  //  {
+  //   method:'POST',
+  //    headers:{
+  //     'Content-Type':'application/json'
+  //    },
+  //    body:JSON.stringify({
+  //     name,
+  //     email,
+  //     message,
+  //    })
+  //  })
+     
+   
+    
      } 
   
     catch(error){

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import astrid from "../assets/astridsalon.jpg"
 import nick from "../assets/nicktech.jpg"
-import mcgan from "../assets/mcganlaw.jpg"
+import mcgan from "../assets/mcgan.jpeg"
 import oleemall from "../assets/oleeamll.jpg"
 import fitness from "../assets/wikfitness.jpg"
+import theprint from "../assets/theprint.jpeg"
 
 
 
@@ -32,17 +33,24 @@ const[project, setProject]=useState();
   
  },
  {
-  id:3,
+  id:4,
   image:fitness,
   title:"Fitness Website",
   urlsL:"https://fitness.wiktrip.in/"
  
  },
  {
-  id:3,
+  id:5,
   image:mcgan,
   title:"LawFirm Website",
   urlsL:"https://mcganlawfirm.in/"
+  
+ },
+ {
+  id:6,
+  image:theprint,
+  title:"PrintHouse Website",
+  urlsL:"https://theprint.house/"
   
  }
   ];
