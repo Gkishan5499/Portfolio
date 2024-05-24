@@ -25,7 +25,7 @@ const Header = () => {
 
    },
    {
-    title:"Project",
+    title:"My Work",
     link:"/project",
     linkid:3
 
@@ -58,7 +58,7 @@ const Header = () => {
       :<CloseIcon sx={{color:'white', fontSize:30}} onClick={()=>setMenu(false)} />
       } */}
      <h1 className='text-2xl font-bold p-2'>{logo}<span className='text-gray-200'>Gautam</span> </h1>
-     <div className='md:space-x-3 md:flex hidden'>
+     <div className='md:gap-6 md:flex hidden'>
      {
       menulink.map((e,i)=>{
         return(

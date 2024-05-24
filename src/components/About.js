@@ -26,7 +26,7 @@ const About = () => {
      }
   ]
 
-  const expert= ['HTML','CSS','JavaScript','ReactJs', 'Angular','Wordpress','PHP','Java','SEO','MySql'];
+  const expert= ['HTML','CSS','JavaScript','ReactJs', 'Express.js','Wordpress','Shopify','PHP','Java','SEO','MySql'];
 
 
   const showResume=()=>{

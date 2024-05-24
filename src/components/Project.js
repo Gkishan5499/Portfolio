@@ -5,6 +5,9 @@ import mcgan from "../assets/mcgan.jpeg"
 import oleemall from "../assets/oleeamll.jpg"
 import fitness from "../assets/wikfitness.jpg"
 import theprint from "../assets/theprint.jpeg"
+import arj from "../assets/arj.jpeg"
+import academy from "../assets/academy.jpeg"
+import miss from "../assets/miss.jpeg"
 
 
 
@@ -51,6 +54,27 @@ const[project, setProject]=useState();
   image:theprint,
   title:"PrintHouse Website",
   urlsL:"https://theprint.house/"
+  
+ },
+ {
+  id:7,
+  image:arj,
+  title:"ARJ Service Hub",
+  urlsL:"https://arjserviceshub.pro/"
+  
+ },
+ {
+  id:8,
+  image:academy,
+  title:"Samnic Academy",
+  urlsL:"https://samnicacademy.in/"
+  
+ },
+ {
+  id:9,
+  image:miss,
+  title:"Miss Universe Arunachal",
+  urlsL:"https://missuniversearunachal.com/"
   
  }
   ];
