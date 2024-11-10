@@ -6,6 +6,9 @@ import About from './About';
 import Contact from './Contact';
 import Project from './Project';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import Tabs from './Tabs';
+import ReactProject from './ReactProject';
+import ShopifyProject from './ShopifyProject';
 
 
 const Home = () => {
@@ -66,8 +69,23 @@ const Home = () => {
 
       <br />
       <About />
-      <h1 className='text-3xl text-orange-500 mt-5 text-center font-bold'>My Works</h1>
-      <Project />
+      <div id='projects'>
+      <h1 className='text-3xl text-orange-500 mt-8 text-center font-bold'>My Works</h1>
+        <Tabs>
+         <div title='Wordpress'>
+          <Project/>
+         </div>
+
+         <div title='React'>
+          <ReactProject/>
+         </div>
+         <div title='Shopify'>
+          <ShopifyProject/>     
+         </div>
+
+         
+        </Tabs>
+    </div>
       <br />
       <br />
 

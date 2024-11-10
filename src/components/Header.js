@@ -26,7 +26,7 @@ const Header = () => {
    },
    {
     title:"My Work",
-    link:"/project",
+    link:"/?#projects",
     linkid:3
 
    },

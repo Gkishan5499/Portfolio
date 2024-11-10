@@ -11,7 +11,7 @@ import miss from "../assets/miss.jpeg"
 import dayal from '../assets/dayal.jpeg'
 import rmart from '../assets/rmart.jpeg'
 import caglaxy from '../assets/caglaxy.jpeg'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -117,15 +117,19 @@ const Project = () => {
 
             return (
 
-            <a href={e.urlsL}><div key={i} className='p-2 bg-gray-800 text-white  m-3 rounded-lg shadow-xl
-           shadow-gray-500 transition-shadow hover:translate-y-5 hover:bg-black duration-200 cursor-pointer'>
+            <div key={i} className='p-2 bg-gray-800 text-white  m-3 rounded-lg shadow-xl
+           shadow-gray-500  hover:bg-black duration-200'>
                 <img src={e.image} />
-                <h1 className='md:text-xl text-sm font-bold text-orange-500 mt-2'>{e.title}</h1>
+                <div className='sm:flex sm:justify-between text-center items-center pt-5  '>
+                <h1 className='md:text-lg text-sm font-semibold text-orange-500 mt-2 mb-6'>{e.title}</h1>
                 <h1>{e.description}</h1>
+                <Link to={`${e.urlsL}`}><span className='border p-2 bg-transparent
+                 border-white text-white text-lg hover:bg-orange-500 rounded-lg '>Live Preview</span></Link>
+                 </div>
                 {/* <div></div> */}
                 {/* <h1 className='bg-orange-500 inline-block w-10 h-10 text-center rounded-full p-2 absolute -top-10 -z-10'> {e.id}</h1> */}
               </div>
-              </a>
+           
 
             )
 
