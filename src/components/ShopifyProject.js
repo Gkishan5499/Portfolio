@@ -25,25 +25,26 @@ const ShopifyProject = () => {
 
   return (
     <div className='w-full  mx-auto'>
-      <div className='grid md:gap-x-8 gap:x-4 md:gap-y-4 gap-y-2 md:grid-cols-3 grid-cols-2 p-4'>
+     <div className=' flex flex-wrap justify-center items-center'>
         {
 
           data.slice(0, visibleCount).map((e, i) => {
-
+             
             return (
 
-              <div key={i} className='p-2 bg-gray-800 text-white  m-3 rounded-lg shadow-xl
+            <div key={i} className='sm:max-w-[400px] p-2 bg-gray-800 text-white  m-3 rounded-lg shadow-xl
            shadow-gray-500  hover:bg-black duration-200'>
                 <img src={e.image} />
-                <div className='sm:flex sm:justify-between text-center items-center pt-5  '>
-                <h1 className='md:text-lg text-sm font-semibold text-orange-500 mt-2 mb-6 '>{e.title}</h1>
+                <div className='flex justify-between text-center items-center p-5  '>
+                <h1 className='md:text-lg text-sm font-semibold text-orange-500 mt-2 mb-6'>{e.title}</h1>
                 <h1>{e.description}</h1>
-                <Link to={`${e.urlsL}`}><span className='border p-2 bg-transparent
-                 border-white text-white text-lg hover:bg-orange-500 rounded-lg '>Live Preview</span></Link>
+                <Link to={`${e.urlsL}`}><span className='border p-2 bg-transparent text-sm
+                 border-white text-white  hover:bg-orange-500 rounded-lg '>Live Preview</span></Link>
                  </div>
                 {/* <div></div> */}
                 {/* <h1 className='bg-orange-500 inline-block w-10 h-10 text-center rounded-full p-2 absolute -top-10 -z-10'> {e.id}</h1> */}
               </div>
+           
 
             )
 

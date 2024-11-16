@@ -1,42 +1,16 @@
 import React, { useState } from 'react'
 
 import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+
 import { Link } from 'react-router-dom';
 
 const Header = () => {
 
   const[logo, setLogo]= useState("Kishan");
   // const[menu , setMenu]= useState(false);
-  // const[menuicon , setMenuicon]=useState(false);
+// const[menuicon , setMenuicon]=useState(false);
 
-  const[menulink, setMenulink]= useState([
-    {
-    title:"Home",
-    link:"/",
-    linkid:1
-
-   },
-   {
-    title:"About",
-    link:"/about",
-    linkid:2
-
-   },
-   {
-    title:"My Work",
-    link:"/?#projects",
-    linkid:3
-
-   },
-   {
-    title:"Contact",
-    link:"/contact",
-    linkid:4
-
-   }
-])
+  
   return (
     <>
      
@@ -59,13 +33,17 @@ const Header = () => {
       } */}
      <h1 className='text-2xl font-bold p-2'>{logo}<span className='text-gray-200'>Gautam</span> </h1>
      <div className='md:gap-6 md:flex hidden'>
-     {
-      menulink.map((e,i)=>{
-        return(
-          <Link to={e.link}  key={i} className='m-2 hover:text-gray-100 '>{e.title}</Link> 
-        )
-      })
-     }
+
+
+     <Link to={'/'} className='m-2 hover:text-gray-100 '>Home</Link>
+     <Link to={'/about'} className='m-2 hover:text-gray-100 '>About</Link>
+     <Link to={'/#projects'} className='m-2 hover:text-gray-100 '>Projects</Link>
+     <Link to={'/contact'} className='m-2 hover:text-gray-100 '>Contact</Link>
+
+
+
+
+      
      
       
       </div> 

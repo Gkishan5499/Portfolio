@@ -75,13 +75,12 @@ const Contact = () => {
 
   return (
     <>
-      <div className=' md:w-full md:min-h-screen w-full p-3'>
-     <h1 className='md:text-center text-3xl font-bold text-orange-500 pt-10'>Contact me</h1>
-      <div className='md:flex md:justify-between md:item-center  space-y-20'>
+      <div className='w-full md:min-h-screen  p-3 mx-auto'>
+      <div className='sm:flex sm:justify-between sm:item-center p-3 space-y-20'>
      
-      <div className='w-full md:w-1/2 md:flex flex justify-center items-center'>
+      <div className='w-full  flex justify-center items-center'>
       <div>
-        <h1 className='text-3xl font-bold text-white mt-2'>Stay and Connect to me </h1>
+        <h1 className='text-2xl font-bold text-white py-2'>Stay and Connect to me </h1>
         <div className='flex text-white mt-3 '>
         <h2 className='font-bold text-white mr-2 '>Address:</h2>
         <p className='md:text-lg text-sm'>Lathiya Varanasi, Uttar Pradesh ,India</p>
@@ -95,15 +94,15 @@ const Contact = () => {
         <p>+91-6394571551</p>
         </div>
         <Icons/>
-      </div>
+      </div> 
           
       </div>
-      <div className='md:w-1/2 w-full p-4  '>
-      <form className='md:flex md:flex-wrap md:justify-start '  onSubmit={adduser} >
+      <div className='flex  justify-center items-center'>
+      <form className='w-full'  onSubmit={adduser} >
        
       <input
        type="text" 
-       name='name'
+       name='name' 
        value={user.name}
        required={true}
        onChange={(e)=>setUser({...user, name:e.target.value})}

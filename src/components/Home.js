@@ -69,6 +69,7 @@ const Home = () => {
 
       <br />
       <About />
+  
       <div id='projects'>
       <h1 className='text-3xl text-orange-500 mt-8 text-center font-bold'>My Works</h1>
         <Tabs>
@@ -89,8 +90,10 @@ const Home = () => {
       <br />
       <br />
 
-
-      <Contact id="contact" />
+    <div className='w-full mx-auto'>
+    <Contact id="contact"  />
+    </div>
+      
 
     </>
 
