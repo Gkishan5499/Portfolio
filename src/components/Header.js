@@ -16,7 +16,7 @@ const Header = () => {
      
      
      
-     <nav className=' flex justify-between items-center p-4 bg-gray-900 text-orange-500 border-b-2 sticky top-0'>
+     <nav className=' flex justify-between items-center p-4 bg-gray-900 text-orange-500  sticky top-0'>
     {/* {
       setMenuicon?  <MenuIcon  sx={{color:'white', fontSize:30 ,}} onClick={()=>setMenu(true)} />
       :<CloseIcon sx={{color:'white', fontSize:30}} onClick={()=>setMenu(false)} />
@@ -36,9 +36,9 @@ const Header = () => {
 
 
      <Link to={'/'} className='m-2 hover:text-gray-100 '>Home</Link>
-     <Link to={'/about'} className='m-2 hover:text-gray-100 '>About</Link>
-     <Link to={'/#projects'} className='m-2 hover:text-gray-100 '>Projects</Link>
-     <Link to={'/contact'} className='m-2 hover:text-gray-100 '>Contact</Link>
+     <a href='#about-us' className='m-2 hover:text-gray-100 '>About</a>
+     <a href='#project' className='m-2 hover:text-gray-100 '>Projects</a>
+     <a href="contact" className='m-2 hover:text-gray-100 '>Contact</a>
 
 
 

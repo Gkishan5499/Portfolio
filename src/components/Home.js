@@ -67,9 +67,13 @@ const Home = () => {
 
 
 
-      <br />
-      <About />
-  
+      
+       <section id='about-us' className=' my-20'>
+       <About />
+       </section>
+     
+     
+      <section id='project' className='my-20'>
       <div id='projects'>
       <h1 className='text-3xl text-orange-500 mt-8 text-center font-bold'>My Works</h1>
         <Tabs>
@@ -89,11 +93,13 @@ const Home = () => {
     </div>
       <br />
       <br />
+   </section>
 
+    <section id='contact'>
     <div className='w-full mx-auto'>
     <Contact id="contact"  />
     </div>
-      
+    </section>  
 
     </>
 

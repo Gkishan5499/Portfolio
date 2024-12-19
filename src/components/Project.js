@@ -16,27 +16,7 @@ import { Link } from 'react-router-dom'
 
 
 const Project = () => {
-  const data = [{
-    id: 1,
-    image: astrid,
-    title: "Salon website",
-    urlsL: "https://astridsalon.in/"
-
-  },
-  {
-    id: 2,
-    image: nick,
-    title: "IT Comapny Portfolio",
-    urlsL: "https://nicktechsolution.com/"
-
-  },
-  {
-    id: 3,
-    image: oleemall,
-    title: "E-commerce Website",
-    urlsL: "https://oleemall.in/"
-
-  },
+  const data = [
   {
     id: 4,
     image: fitness,
@@ -44,13 +24,7 @@ const Project = () => {
     urlsL: "https://fitness.wiktrip.in/"
 
   },
-  {
-    id: 5,
-    image: mcgan,
-    title: "LawFirm Website",
-    urlsL: "https://mcganlawfirm.in/"
-
-  },
+  
   {
     id: 6,
     image: theprint,

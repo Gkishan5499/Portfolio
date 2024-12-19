@@ -45,7 +45,7 @@ const About = () => {
 
  
       <div className='flex justify-center p-5'>
-      <h1 className='text-2xl font-bold text-orange-500'>My Services</h1>
+      <h1 className='text-2xl font-bold text-orange-500'>About me</h1>
       </div>
     <div className='md:flex justify-between items-center p-4  '>
      {
